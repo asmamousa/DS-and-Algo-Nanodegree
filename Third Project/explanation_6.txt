@@ -1,0 +1,1 @@
+The time complexity of finding the min and max of an unsorted array is (c + 1n) -> single traverse while space complexity is O(1)

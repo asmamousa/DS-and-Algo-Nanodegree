@@ -1,0 +1,3 @@
+The Dictionary recursion task is pretty straightforward. We need to look up the user in the users’ list inside of the main group and if it was not found then search for each group inside it. The best technique is recursive since it’s the same problem but with different input.
+Time complexity is O(n) for each call of the function.
+Space complexity is O(2n)= O(n) where n is the number of groups/users that will be stored in lists.

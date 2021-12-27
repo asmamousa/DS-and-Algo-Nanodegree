@@ -1,0 +1,5 @@
+Regarding union and intersection of two linked list tasks. For the union part, I used a set to store all non-duplicated values for each linked list in order to check if the values in the second one already exist on the first one so it’s not gonna be added to the resulted linked list.
+
+Time complexity -> O(n). I added a tail variable to the linked list class in order to make append() takes constant time and that would optimize the overall time complexity. Adding linked list nodes’ values to a set and traversing on the next set will take O(n).
+
+Space complexity would be O(2n)=O(n). Which is the created linked list for each union and intersection.

@@ -1,0 +1,21 @@
+Big-O Notation for Unscramble Computer Science Problems:
+
+1. Task0 -> O(1). Since it takes constant time to fetch required data from a specific index in the list.
+
+2. Task1 -> O(n). Since the main function in the code iterates through each one of the lists after one another so the run-time will be (n+m). Some constant time statements like prints and creating the set that will add constant c to the equation to be O(n+m+c). Due to the small effect of constants we might discard it. Also, n and m that represent the lengths of each list we can consider the worst case which is to take the bigger size for both, that leads to be O(2n) and again we can discard the constants.
+
+3. Task2 -> O(n) where n is the size of the caller list(input), and max function will take O(n) as well, so now we have O(2n). As explained before we can discard the constants related to statements like prints and returns.
+
+4.1 Task3 -> Part A: O(n log) -> originally its (n+ nlog) n: len(calls) when searching for receiving numbers the code iterates through calls list. While n * log is for sorting the list using sort built-in function. Since nlog > n we can discard it and the final result is O(nlog)
+     
+4.2 Task3 -> Part B -> O(n) the code iterates through calls list once.
+
+NOTE: the complexity can be reduced to O(n) by returning a set in Part A but that will require duplication in the code or let the function do more than one job so that’s why I chose this approach.
+
+5. Task4 -> O(n logn) -> in the code there is iterating through each list. Union built in function also has linear time-complexity. Regarding the difference between sets it will have a time complexity of O(len(n)) where n is the set we want to subtract from. In my case the length is n. Therefore the complexity will be O(cn) where c is constant and we can discard it and the complexity for sort() will be O(n logn) and as nlog > n the overall complexity will be O(n log n)
+
+NOTE: time-complexity of sorting, union, difference was obtained from looking up online.
+
+ 
+
+

@@ -1,0 +1,5 @@
+Regarding search in the rotated sorted list. As requested, the time complexity should be O(log n) which requires using binary search. The problem here is the rotation that will make need to sort it again in order to use BS on the list. But the time complexity will be O(nlogn). So, the idea is to split the list into two sorted parts and apply BS to one of them. I used BS to find the min number in the array as a first step that from here we can split it into two parts as implemented in the code.
+
+Time complexity is O(2* logn) -> finding min number will require logn and once we split the list and decide in which part the number in, will perform BS on that part to find the target number and that will require logn. 
+
+Space complexity -> O(1), since for each function call there are just some variables regardless parameters’ sizes

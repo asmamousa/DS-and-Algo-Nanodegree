@@ -1,0 +1,4 @@
+For the Dutch National Flag problem. The required is to sort it in a single traverse. It’s gonna be done through sorting zeros and twos then the ones will be sorted already. It was solved before so I enhance the solution by checking if we have 0 in the beginning and 2 at the end no need to swap anything or change the values. Since it’s not needed. This works in case of the array is already sorted.
+
+Time complexity is O(c+ 1n) -> single traverse, c -> constant-time statements.
+While space complexity is O(1). Since we didn’t need any storing data structures.

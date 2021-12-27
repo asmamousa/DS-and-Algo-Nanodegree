@@ -1,0 +1,5 @@
+Regarding rearrange array digit task. We have an array of (>0)integers. To extract the two numbers whose sum is maximum, we have to sort them and the best sorting algorithm is merge sort. I can use the quick sort since it sorts in place but if the array is already sorted that will make time complexity O(n^2). 
+
+Time complexity is O(n logn) for the merge sort and O(n) for the extract of the two numbers. Since nlogn > n, then the overall time complexity is O(nlogn).
+
+Space complexity is O(n) -> for the merge sort and O(1) for some variables. So the overall result is O(n).

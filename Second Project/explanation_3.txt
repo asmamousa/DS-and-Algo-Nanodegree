@@ -1,0 +1,13 @@
+Regarding Huffman coding, the algorithm is explained in the task. I went with the suggestion of min-heap to store nodes. I used the built-in version because I did implement it a couple of times before and I wanted to try the built-in version and I'm happy with the result. I learned about total_ordering annotation. Now, about other data structures, I used dictionaries for both storing the frequencies and storing code for each character since the time complexity for it is O(1) and I'm gonna use it ib encoding and decoding.
+
+The time complexity of encoding is like this:
+1. build freq-table: O(n^2) -> iterating through each char in string and for each one find count(=O(n)).
+2. build min-heap: O(nlogn) -> iterate through each char in freq_table(=O(n)) and insert it into min-heap(=O(logn))
+3. build Huffman tree: O(N log N) -> iterate through n/2 of min-heap size and add the result node to the heap again. As always, we can discard the constant (1/2).
+4.generate Huffman code for each char: O(n) -> iterate through each node of min-heap until we reach leaves.
+5.generate encoded data: O(n) -> iterate through each char in original input data and replace it with its encoded value.
+
+The time complexity of decoding is like this:
+1. decoding process: O(n) -> iterate through (size of encoded data)+1 and checks bit if 0 or 1 and take the required action for each.
+
+Space complexity would be O(n). Since two dictionaries were created, one for free-table and the other for code representation for each char. Also, a heap of size (n) is created. So the overall complexity is O(3n) which is O(n).
